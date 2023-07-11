@@ -51,9 +51,7 @@ app.get("/", async (req, res) => {
       posts: posts,
     });
   } catch (err) {
-    // Hata durumunda yapılacaklar
     console.error(err);
-    // Hata mesajını veya hata sayfasını kullanıcıya gösterebilirsiniz
     res.render("error", { error: "An error occurred" });
   }
 });
